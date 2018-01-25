@@ -1,9 +1,10 @@
 def my_collect(array)
   i = 0
+  newary = []
   while i < array.length 
-  array[i] = yield(array[i])
+  newary[i] = yield(array[i])
   i += 1
   end
-  array
+  newary
 end
 
